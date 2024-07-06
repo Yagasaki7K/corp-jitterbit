@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Insira um número para retornar todos os números ímpares entre 0 e o número inserido</p>
+    <input type="text" id="inputinputNumber" placeholder="Insira um número">
+    <span id="result"></span>
+    <button id="btn">Calcular</button>
+
+    <p>Insira uma palavra para ser virada do avesso</p>
+    <input type="text" id="inputText">
+    <button id="btnWords">Inverter</button>
+    <div id="resultWords"></div>
+</body>
+<script>
+    const btn = document.getElementById('btn');
+    const btnWords = document.getElementById('btnWords');
+    const input = document.getElementById('inputNumber');
+    const result = document.getElementById('result');
+
+    function somaImpares() {
+        let number = parseInt(input.value);
+        let oddNumbersResult = 0;
+
+        if (!number || number < 0) {
+            result.innerHTML = 'Insira um número positivo';
+            return;
+        } 
+
+        for (let indexNumber = 0; indexNumber <= number; indexNumber++) {
+            if (indexNumber % 2 !== 0) {
+                oddNumbersResult += indexNumber;
+            }
+        }
+
+        result.innerHTML = `A soma de todos os ímpares entre 0 e ${number} é ${oddNumbersResult}`;
+    }
+    btn.addEventListener('click', somaImpares);
+
+    function inverterPalavra() {
+        let text = document.getElementById('inputText').value;
+        let result = text.split('').reverse().join('');
+        document.getElementById('resultWords').innerHTML = result;
+    }
+
+    btnWords.addEventListener('click', inverterPalavra);
+</script>
+</html>
