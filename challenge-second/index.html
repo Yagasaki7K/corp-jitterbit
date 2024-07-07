@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Teórico - Segundo Desafio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <img src="logo.png" alt="">
+    </nav>
+    <form action="">
+        <h2>Informações Pessoais</h2>
+        <label for="userName">Nome Completo</label>
+        <input type="text" name="userName" id="userName"/>
+
+        <label for="userMail">E-mail</label>
+        <input type="email" name="userMail" id="userMail">
+
+        <label for="userPhone">Telefone</label>
+        <input type="tel" name="userPhone" id="userPhone">
+
+        <h2>Endereço de Entrega</h2>
+        <label for="userAddress">Rua e Número</label>
+        <input type="text" name="userAddress" id="userAddress">
+
+        <label for="userComplement">Complemento</label>
+        <input type="text" name="userComplement" id="userComplement">
+
+        <label for="userDistrict">Bairro</label>
+        <input type="text" name="userDistrict" id="userDistrict">
+
+        <label for="userCity">Cidade</label>
+        <input type="text" name="userCity" id="userCity">
+
+        <label for="userState">Estado</label>
+        <select>
+            <option value="">Selecione o estado</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+        </select>
+
+        <label for="userCEP">CEP</label>
+        <input type="text" name="userCEP" id="userCEP">
+
+        <h2>Informações do Produto</h2>
+
+        <label for="userProduct">Nome do Produto</label>
+        <select name="userProduct">
+            <option value="">Selecione o tipo de Roupa</option>
+            <option value="camisa">Camisa</option>
+            <option value="regata">Regata</option>
+            <option value="calca">Calça</option>
+            <option value="short">Short</option>
+            <option value="vestido">Vestido</option>
+            <option value="saia">Saia</option>
+        </select>
+
+        <label for="userQuantity">Quantidade</label>
+        <input type="number" name="userQuantity" id="userQuantity">
+
+        <label for="userPayment">Método de Pagamento</label>
+        <select name="userPayment">
+            <option value="">Selecione o tipo de Pagamento</option>
+            <option value="creditCard">Cartão de Credito</option>
+            <option value="boleto">Boleto Bancário</option>
+            <option value="paypal">PayPal</option>
+        </select>
+
+        <div class="buttons">
+            <button type="submit" class="green">Enviar Pedido</button>
+            <button type="reset" class="yellow">Limpar Formulário</button>
+        </div>
+    </form>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-media">
+                <h2>Redes Sociais</h2>
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <img src="https://img.icons8.com/ios-filled/50/7f3fc1/facebook-new.png" alt="Facebook"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank">
+                            <img src="https://img.icons8.com/ios-filled/50/7f3fc1/twitter.png" alt="Twitter"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img src="https://img.icons8.com/ios-filled/50/7f3fc1/instagram-new.png" alt="Instagram"/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="information">
+                <h2>Informações</h2>
+                <p>(00) 0000-0000</p>
+                <p>example@example.com</p>
+                <p>Rua dos Cafezais, Nº 00 - Cidade, Estado</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2024. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
